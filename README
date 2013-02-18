@@ -1,5 +1,8 @@
 Copyright 2012 - The CyanogenMod Project
 
-Device configuration for T-Mobile/Telus Samsung Galaxy S II.
+Device configuration for NTT DOCOMO Galaxy S II LTE.
 
 WORK IN PROGRESS. WILL EAT YOUR CAT.
+
+<project name="kbc-developers/android_device_samsung_celoxdcm" path="device/samsung/celoxdcm" remote="github" revision="cm-10.1" />
+<project name="kbc-developers/android_kernel_samsung_msm8660" path="kernel/samsung/msm8660-dcm" remote="github" revision="android-jb-mr1-v3" />

@@ -16,14 +16,14 @@
 -include device/samsung/celox-common/BoardConfigCommon.mk
 
 # inherit from the proprietary version
--include vendor/samsung/hercules/BoardConfigVendor.mk
+-include vendor/samsung/celoxdcm/BoardConfigVendor.mk
 
 # Assert
-TARGET_BOARD_INFO_FILE ?= device/samsung/hercules/board-info.txt
-TARGET_OTA_ASSERT_DEVICE := SGH-T989,hercules
+TARGET_BOARD_INFO_FILE ?= device/samsung/celoxdcm/board-info.txt
+TARGET_OTA_ASSERT_DEVICE := SC-03D,celoxdcm
 
 # Kernel
-TARGET_KERNEL_CONFIG := cyanogenmod_hercules_defconfig
+TARGET_KERNEL_CONFIG := cyanogenmod_celoxdcm_defconfig
 
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 131072
@@ -34,4 +34,4 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 20044333056
 TARGET_USERIMAGES_USE_EXT4 := true
 
 # Bluetooth
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/hercules/bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/celoxdcm/bluetooth
