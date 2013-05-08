@@ -4,5 +4,5 @@
 <project name="CyanogenMod/android_device_samsung_msm8660-common" path="device/samsung/msm8660-common" remote="github" revision="cm-10.1" />
 <project name="CyanogenMod/android_device_samsung_celox-common" path="device/samsung/celox-common" remote="github" revision="cm-10.1" />
 <project name="kbc-developers/android_device_samsung_celoxdcm" path="device/samsung/celoxdcm" remote="github" revision="cm-10.1" />
-<project name="kbc-developers/android_kernel_samsung_msm8660" path="kernel/samsung/msm8660-dcm" remote="github" revision="android-jb-mr1-v2" />
+<project name="kbc-developers/android_kernel_samsung_msm8660" path="kernel/samsung/msm8660-dcm" remote="github" revision="android-jb-mr1-v7" />
 </manifest>
