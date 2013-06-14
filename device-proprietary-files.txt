@@ -40,5 +40,5 @@ fonts/truetypeEmoji.ttf
 # emoji
 lib/libemoji_docomo.so
 
-# extra
-app/WAPPushManager.apk
+# SPMode
+app/SPModePushNotifier.apk
