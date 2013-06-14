@@ -39,3 +39,4 @@ persist.radio.snapshot_disabled=1
 # docomo
 ro.config.libemoji=libemoji_docomo.so
 ro.ril.enable.dcm.feature=1
+ro.telephony.default_network=10
