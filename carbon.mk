@@ -1,9 +1,5 @@
 $(call inherit-product, device/samsung/hercules/full_hercules.mk)
 
-# Boot animation
-TARGET_SCREEN_HEIGHT := 800
-TARGET_SCREEN_WIDTH := 480
-
 # Inherit some common Carbon stuff.
 $(call inherit-product, vendor/carbon/config/common_phone.mk)
 
