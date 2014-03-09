@@ -1,2 +1,2 @@
-add_lunch_combo cm_celoxdcm-eng
+add_lunch_combo liquid_celoxdcm-userdebug
 
