@@ -32,6 +32,7 @@ TARGET_OTA_ASSERT_DEVICE := SC-03D,celoxdcm
 # Kernel
 TARGET_KERNEL_CONFIG        := cyanogenmod_celoxdcm_defconfig
 TARGET_KERNEL_SOURCE        := kernel/samsung/msm8660-dcm
+TARGET_KERNEL_CUSTOM_TOOLCHAIN := LK
 
 # Assert minimum baseband version
 TARGET_BOARD_INFO_FILE ?= device/samsung/celoxdcm/board-info.txt
