@@ -1,3 +1,7 @@
+# Boot animation
+TARGET_SCREEN_HEIGHT := 800
+TARGET_SCREEN_WIDTH := 480
+
 $(call inherit-product, device/samsung/celoxdcm/full_celoxdcm.mk)
 
 # Enhanced NFC
