@@ -33,6 +33,9 @@ PRODUCT_PROPERTY_OVERRIDES := \
     ro.product.locale.language=ja \
     ro.product.locale.region=JP
 
+# OTA ID
+otaupdater.otaid=liquidceloxdcm
+
 # Inherit from celox-common
 $(call inherit-product, device/samsung/celox-common/celox-common.mk)
 
