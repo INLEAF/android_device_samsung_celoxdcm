@@ -6,10 +6,8 @@
      "revision": "cm-11.0"
    },
    {
-     "remote": "cm",
-     "repository": "CyanogenMod/android_device_samsung_msm8660-common",
-     "target_path": "device/samsung/msm8660-common",
-     "revision": "cm-11.0"
+     "repository": "CarbonDev/android_device_samsung_msm8660-common",
+     "target_path": "device/samsung/msm8660-common"
    },
    {
      "remote": "cm",
