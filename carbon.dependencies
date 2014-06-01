@@ -1,28 +1,32 @@
 [
    {
      "remote": "cm",
-     "repository": "CyanogenMod/android_device_samsung_qcom-common",
+     "repository": "android_device_samsung_qcom-common",
      "target_path": "device/samsung/qcom-common",
      "revision": "cm-11.0"
    },
    {
-     "repository": "CarbonDev/android_device_samsung_msm8660-common",
-     "target_path": "device/samsung/msm8660-common"
+     "remote": "cr"
+     "repository": "android_device_samsung_msm8660-common",
+     "target_path": "device/samsung/msm8660-common",
+     "revision": "kk"
    },
    {
      "remote": "cm",
-     "repository": "CyanogenMod/android_device_samsung_celox-common",
+     "repository": "android_device_samsung_celox-common",
      "target_path": "device/samsung/celox-common",
      "revision": "cm-11.0"
    },
    {
      "remote": "cm",
-     "repository": "CyanogenMod/android_kernel_samsung_msm8660-common",
+     "repository": "android_kernel_samsung_msm8660-common",
      "target_path": "kernel/samsung/msm8660-common",
      "revision": "cm-11.0"
    },
    {
-    "repository": "CarbonDev/proprietary_vendor_samsung",
-    "target_path": "vendor/samsung"
+     "remote": "cr"
+     "repository": "CarbonDev/proprietary_vendor_samsung",
+     "target_path": "vendor/samsung",
+     "revision": "kk"
    }
 ]
