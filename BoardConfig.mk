@@ -29,19 +29,19 @@ USE_CAMERA_STUB := true
 -include device/samsung/celox-common/BoardConfigCommon.mk
 
 # inherit from the proprietary version
--include vendor/samsung/skyrocket/BoardConfigVendor.mk
+-include vendor/samsung/celoxdcm/BoardConfigVendor.mk
 
 TARGET_BOOTLOADER_BOARD_NAME := MSM8660_SURF
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := SGH-I727,skyrocket
+TARGET_OTA_ASSERT_DEVICE := SC-03D,celoxdcm
 
 # Kernel
-TARGET_KERNEL_CONFIG        := cyanogenmod_skyrocket_defconfig
-TARGET_KERNEL_SOURCE        := kernel/samsung/msm8660-common
+TARGET_KERNEL_CONFIG        := cyanogenmod_celoxdcm_defconfig
+TARGET_KERNEL_SOURCE        := kernel/samsung/msm8660-dcm
 
 # Assert minimum baseband version
-TARGET_BOARD_INFO_FILE ?= device/samsung/skyrocket/board-info.txt
+TARGET_BOARD_INFO_FILE ?= device/samsung/celoxdcm/board-info.txt
 
 BOARD_KERNEL_CMDLINE        := androidboot.hardware=qcom usb_id_pin_rework=true no_console_suspend=true
 BOARD_KERNEL_BASE           := 0x40400000
@@ -62,26 +62,22 @@ BOARD_SYSTEMIMAGE_PARTITION_SIZE := 838860800
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 20044333056
 BOARD_FLASH_BLOCK_SIZE := 131072
 
-#twrp
- DEVICE_RESOLUTION := 480x800
- TW_INTERNAL_STORAGE_PATH := "/mnt/sdcard"
- TW_INTERNAL_STORAGE_MOUNT_POINT := "sdcard"
- TW_EXTERNAL_STORAGE_PATH := "/mnt/external_sd"
- TW_EXTERNAL_STORAGE_MOUNT_POINT := "external_sd"
- TW_DEFAULT_EXTERNAL_STORAGE := false
- BOARD_HAS_NO_REAL_SDCARD := true
- TW_INCLUDE_CRYPTO := true
- TW_CRYPTO_FS_TYPE := "ext4"
- TW_CRYPTO_REAL_BLKDEV := "/dev/block/mmcblk0p25"
- TW_CRYPTO_MNT_POINT := "/data"
- TW_CRYPTO_FS_OPTIONS := "noauto_da_alloc"
- TW_CRYPTO_FS_FLAGS := "0x00000006"
- TW_CRYPTO_KEY_LOC := "/efs/metadata"
- TW_FLASH_FROM_STORAGE := true
- TW_FLASH_FROM_STORAGE := true
- TW_NO_REBOOT_BOOTLOADER := true
- TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
- HAVE_SELINUX := true
+# Bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/celoxdcm/bluetooth
 
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/skyrocket/bluetooth
-
+#TWRP
+DEVICE_RESOLUTION := 480x800
+TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
+TW_NO_REBOOT_BOOTLOADER := true
+TW_INTERNAL_STORAGE_PATH := "/sdcard"
+TW_INTERNAL_STORAGE_MOUNT_POINT := "sdcard"
+TW_EXTERNAL_STORAGE_PATH := "/external_sdcard"
+TW_EXTERNAL_STORAGE_MOUNT_POINT := "external_sdcard"
+BOARD_HAS_NO_REAL_SDCARD := true
+TW_INCLUDE_CRYPTO := true
+TW_CRYPTO_FS_TYPE := "ext4"
+TW_CRYPTO_REAL_BLKDEV := "/dev/block/mmcblk0p25"
+TW_CRYPTO_MNT_POINT := "/data"
+TW_CRYPTO_FS_OPTIONS := "noauto_da_alloc"
+TW_CRYPTO_FS_FLAGS := "0x00000006"
+TW_CRYPTO_KEY_LOC := "/efs/metadata"

@@ -11,7 +11,7 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
- 
+
 #
 # This file is the build configuration for a full Android
 # build for maguro hardware. This cleanly combines a set of
@@ -29,12 +29,12 @@ BOARD_HAVE_NFC := true
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
-# Inherit from skyrocket device
-$(call inherit-product, device/samsung/skyrocket/device.mk)
+# Inherit from celoxdcm device
+$(call inherit-product, device/samsung/celoxdcm/device.mk)
 
 # Set those variables here to overwrite the inherited values.
-PRODUCT_NAME := full_skyrocket
-PRODUCT_DEVICE := skyrocket
+PRODUCT_NAME := full_celoxdcm
+PRODUCT_DEVICE := celoxdcm
 PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := samsung
-PRODUCT_MODEL := SAMSUNG-SGH-I727
+PRODUCT_MODEL := SAMSUNG-SC-03D

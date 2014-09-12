@@ -31,15 +31,17 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, vendor/du/config/common.mk)
 
 # Inherit from skyrocket device
-$(call inherit-product, device/samsung/skyrocket/full_skyrocket.mk)
+$(call inherit-product, device/samsung/celoxdcm/full_celoxdcm.mk)
 
 #set build fingerprint
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=SGH-I727 TARGET_DEVICE=SGH-I727 BUILD_FINGERPRINT="samsung/SGH-I727/SGH-I727:4.1.2/IMM76D/UCLI3:user/release-keys" PRIVATE_BUILD_DESC="SGH-I727-user 4.1.2 IMM76D UCLI3 release-keys"
-
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=SC-03D TARGET_DEVICE=SC-03D BUILD_FINGERPRINT="samsung/SC-03D/SC-03D:4.4/KRT16M/OMLPH:user/release-keys" PRIVATE_BUILD_DESC="SC-03D-user 4.4 KRT16M OMLPH release-keys"
 
 # Set those variables here to overwrite the inherited values.
-PRODUCT_NAME := du_skyrocket
-PRODUCT_DEVICE := skyrocket
+PRODUCT_NAME := du_celoxdcm
+PRODUCT_DEVICE := celoxdcm
 PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := samsung
-PRODUCT_MODEL := skyrocket
+PRODUCT_MODEL := celoxdcm
+BOARD_VENDOR := samsung
+BOARD_FAMILY := celox
+TARGET_BOARD_PLATFORM := msm8660
